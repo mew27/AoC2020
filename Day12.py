@@ -55,8 +55,7 @@ def travel_waypoint(actions):
     return ship_pos
 
 instructions = read_input('inputDayTwelve.txt')
-print(instructions[0][0])
 cord = travel(instructions)
-print(cord, abs(cord[0]) + abs(cord[1]))
+print(abs(cord[0]) + abs(cord[1]))
 ship_pos = travel_waypoint(instructions)
 print(abs(ship_pos.real) + abs(ship_pos.imag))
